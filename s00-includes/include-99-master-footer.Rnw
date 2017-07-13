@@ -1,0 +1,6 @@
+		\section{References}
+			\begin{frame}[allowframebreaks]{References}
+				\footnotesize
+				\bibliography{references}
+			\end{frame}
+\end{document}

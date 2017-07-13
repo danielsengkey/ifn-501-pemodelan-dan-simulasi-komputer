@@ -1,0 +1,32 @@
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{cancel}
+\usepackage{subfig}
+
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{amsmath}  	% this permits text in eqnarray among other benefits
+\usepackage{url}		% produces hyperlinks
+\usepackage{hyperref}	% allows for color usage in tables
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{colortbl}	% allows for color usage in tables
+\usepackage{multirow}	% allows for rows that span multiple rows in tables
+\usepackage{pgf}
+\usepackage{calc}
+\usepackage{ulem}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{txfonts}
+\usepackage{array}
+\usepackage{wasysym}
+\usepackage{fancyvrb}
+\usepackage[outdir=./figure/]{epstopdf}
+\usepackage{xcolor}
+\definecolor{lightgray2}{gray}{0.95}
+
+\input{../openintro-statistics/extraTeX/style/colorsV1.tex}
+\input{../s00-includes/openintro-selected-styles.tex}

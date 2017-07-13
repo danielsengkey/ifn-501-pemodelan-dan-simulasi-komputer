@@ -1,0 +1,77 @@
+\definecolor{keywordcolor}{rgb}{0,0.6,0.6}
+\definecolor{delimcolor}{rgb}{0.461,0.039,0.102}
+\definecolor{Rcommentcolor}{rgb}{0.101,0.043,0.432}
+\definecolor{burgundy}{rgb}{0.5, 0.0, 0.13}
+\definecolor{forestgreen(web)}{rgb}{0.13, 0.55, 0.13}
+\definecolor{darkgray}{rgb}{0.66, 0.66, 0.66}
+\definecolor{dimgray}{rgb}{0.41, 0.41, 0.41}
+
+\usepackage{listings}
+
+\lstdefinelanguage{plaintext}{}
+\lstset{
+	language=plaintext,
+	basicstyle=\small\ttfamily,
+%	linewidth=0.8\textwidth,
+	breaklines=true,
+	captionpos=b,
+	backgroundcolor=\color{lightgray2},
+	numbers=left,
+	numbersep=10pt,
+	xleftmargin=.1\textwidth,
+	xrightmargin=.1\textwidth
+}
+\lstset{
+  language=R,
+  basicstyle=\ttfamily,
+  breaklines=true,
+  showstringspaces=false,
+  keywords={if, else, function, theFunction, tmp},
+  otherkeywords={},
+  commentstyle=\itshape\color{Rcommentcolor},
+  keywordstyle=\color{keywordcolor},
+  moredelim=[s][\color{delimcolor}]{"}{"},
+  backgroundcolor=\color{gray}
+  }
+\lstdefinelanguage{INI}{
+    basicstyle=\ttfamily\scriptsize,
+    numberstyle=\tiny,
+    backgroundcolor=\color{white},
+    columns=fullflexible,
+    breaklines=false,
+    morecomment=[s][\color{black}\bfseries]{[}{]},
+    morecomment=[l]{\#},
+    morecomment=[l]{;},
+    moredelim=[s][\color{forestgreen(web)}]{"}{"},
+    keywords={description, network, sim-time-limit},
+    commentstyle={\color{gray}\itshape},
+    morekeywords={},
+    otherkeywords={=,:},
+    keywordstyle={\color{blue}\bfseries},
+	literate=%
+    	*{0}{{{\color{forestgreen(web)}0}}}1
+    	{1}{{{\color{forestgreen(web)}1}}}1
+    	{2}{{{\color{forestgreen(web)}2}}}1
+    	{3}{{{\color{forestgreen(web)}3}}}1
+    	{4}{{{\color{forestgreen(web)}4}}}1
+    	{5}{{{\color{forestgreen(web)}5}}}1
+    	{6}{{{\color{forestgreen(web)}6}}}1
+    	{7}{{{\color{forestgreen(web)}7}}}1
+    	{8}{{{\color{forestgreen(web)}8}}}1
+    	{9}{{{\color{forestgreen(web)}9}}}1
+}
+\lstdefinelanguage{NED}{
+  basicstyle=\ttfamily\scriptsize,
+  numberstyle=\tiny,
+  columns=flexible,
+  breaklines=false,
+  showstringspaces=false,
+  keywords={if, else, function, theFunction, tmp, import, package, network, submodules, connections, <-->, <--, -->},
+  alsoletter={<-->, <--, -->},
+  morecomment=[l]{//},
+  otherkeywords={},
+  backgroundcolor=\color{white},
+  commentstyle={\itshape\color{gray}},
+  keywordstyle={\color{burgundy}\bfseries},
+  moredelim=[s][\color{delimcolor}]{"}{"}
+}

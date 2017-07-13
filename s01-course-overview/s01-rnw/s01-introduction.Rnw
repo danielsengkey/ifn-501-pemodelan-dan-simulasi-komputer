@@ -1,0 +1,65 @@
+% Do not forget that the tex file will be at the parent directory
+\input{../../GeneralSlides/general-2017}
+\subsection{Topics}
+	\begin{frame}{Topics}
+		\begin{itemize}[<+->]
+			\item Fundamental aspects in wireless communications.
+			\item Wireless networks
+			\item Simulation
+			\item \textit{See attachment for more details}
+		\end{itemize}
+	\end{frame}
+	
+\subsection{Scoring System}
+\begin{frame}{Scoring Components}
+\begin{columns}[c]
+  \begin{column}{.5\textwidth}
+    <<scoring-pct, eval=TRUE, echo=FALSE, fig.width=4, fig.height=3, out.width='\\linewidth', fig.align='center', dev='tikz', fig.cap="Scoring components">>=
+    library(RColorBrewer)
+
+    op <- par(mar = c(1,0,1,0))
+    pie(
+      c(.2,.25,.25,.3),
+      labels = c(
+        "Evaluation 1:\nNetwork\nSimulation (20\\%)",
+        "Evaluation 2:\nBasics of\nWireless\nCommunications (25\\%)",
+        "Evaluation 3:\n802.11\nSimulation\nReport (25\\%)",
+        "Final Test (30\\%)"
+        ),
+      col = brewer.pal(4, "Set3")
+      )
+    par(op)
+    @
+    \begin{itemize}[<+->]
+    \small
+      \item 3 Evaluations 70\%
+      \item A comprehensive Final Test 30\%
+    \end{itemize}    
+  \end{column}
+  \begin{column}{.5\textwidth}
+  \small
+    \begin{itemize}[<+->]
+      \item Grading system follows faculty regulation:
+        \begin{itemize}
+          \item $n \geq 80$ Grade = A
+          \item $ 75 \leq n < 80$ Grade = B+
+          \item $ 70 \leq n < 75$ Grade = B+
+          \item $ 65 \leq n < 70$ Grade = B
+          \item $ 60 \leq n < 65$ Grade = C+
+          \item $ 55 \leq n < 60$ Grade = C
+          \item $ 35 \leq n < 55$ Grade = D
+          \item $ n < 35$ Grade = E
+        \end{itemize}
+    \end{itemize}
+  \end{column}
+\end{columns}
+\end{frame}
+
+\subsection{Important Things to Consider}
+	\begin{frame}{Important Things to Consider}
+		\begin{itemize}[<+->]
+			\item We are going to use several applications and systems. Set your schedule for your self-study. It is for your own good.
+			\item Simulation: OMNeT++
+			\item Statistical processing: GNU R
+		\end{itemize}
+	\end{frame}

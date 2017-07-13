@@ -1,0 +1,6 @@
+	\author[D.F. Sengkey]{Daniel Febrian Sengkey}
+	\institute[PSTI UNSRAT]{
+		Department of Electrical Engineering\\
+		Faculty of Engineering\\
+		Universitas Sam Ratulangi}
+	\title[IFC6501]{IFC6501 - Wireless Data Communications}

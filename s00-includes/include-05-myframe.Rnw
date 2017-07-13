@@ -1,0 +1,3 @@
+\newenvironment{myframe}{\begin{frame}{\insertsubsection}{\insertsection}}{\end{frame}}
+\newenvironment{question}{\textbf{Question:}\\\vspace{.5ex}}{\vfill}
+\newenvironment{answer}{\pause\vspace{1em}\textbf{Solution:}\\\vspace{.5ex}\pause}{}

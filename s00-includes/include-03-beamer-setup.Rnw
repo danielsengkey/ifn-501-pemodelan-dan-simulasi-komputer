@@ -1,0 +1,51 @@
+\usefonttheme[onlymath]{serif}
+\beamertemplatenavigationsymbolsempty%\setbeamertemplate{headline}{}
+\setbeamertemplate{caption}[numbered]
+\bibliographystyle{IEEEtran}
+\resetcounteronoverlays{lstlisting}
+
+\newcounter{saveenumi}
+\newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
+\newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
+\resetcounteronoverlays{saveenumi}
+
+\mode<presentation>
+{
+  \usetheme{boxes}
+  % or ...
+	\usecolortheme{rose}
+%	\setbeamercovered{invisible}
+  % or whatever (possibly just delete it)
+}
+\AtBeginSubsubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+  \setbeamercovered{transparent}
+  \small
+	%\begin{multicols}{2}
+	    \tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+   	%\end{multicols}
+  \end{frame}
+}
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+  \setbeamercovered{transparent}
+  \small
+	%\begin{multicols}{2}
+	    \tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/show/hide]
+   	%\end{multicols}
+  \end{frame}
+}
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+  \setbeamercovered{transparent}
+  \small
+	%\begin{multicols}{2}
+	    \tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/show/hide,subsubsectionstyle=hide]
+   %\end{multicols}
+  \end{frame}
+}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\setbeamerfont{caption}{size=\footnotesize}

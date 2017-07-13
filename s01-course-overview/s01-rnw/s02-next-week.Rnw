@@ -1,0 +1,7 @@
+\begin{frame}{Next session..}
+	\begin{itemize}
+		\item OMNeT++
+		\item Finish TicToc Tutorial before class!
+		\item \color{red}{Have OMNeT++, R (and optionally RStudio) installed in your notebooks.} Each student who has notebook is highly advised to bring his/her own notebook.
+	\end{itemize}
+\end{frame}
