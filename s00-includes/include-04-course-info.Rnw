@@ -3,4 +3,4 @@
 		Department of Electrical Engineering\\
 		Faculty of Engineering\\
 		Universitas Sam Ratulangi}
-	\title[IFC6501]{IFC6501 - Wireless Data Communications}
+	\title[IFN501]{IFN501 - System Modeling and Simulation}

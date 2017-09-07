@@ -13,7 +13,7 @@
 {
   \usetheme{boxes}
   % or ...
-	\usecolortheme{rose}
+	\usecolortheme{beaver}
 %	\setbeamercovered{invisible}
   % or whatever (possibly just delete it)
 }

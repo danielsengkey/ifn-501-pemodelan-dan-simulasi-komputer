@@ -1,7 +1,40 @@
-\begin{frame}{Next session..}
-	\begin{itemize}
-		\item OMNeT++
-		\item Finish TicToc Tutorial before class!
-		\item \color{red}{Have OMNeT++, R (and optionally RStudio) installed in your notebooks.} Each student who has notebook is highly advised to bring his/her own notebook.
+\begin{frame}{Next session: Assignment 1 -- Paper and Presentation}
+	\begin{itemize}[<+->]
+		\item Topic: Cases Around Us and The Needs for Computer Simulation.
+		\item Form groups of 3 or 4 students.
+		\item Find a case that suits the topic and discuss it with your group.
+		\item Submit a paper that reports your case and the result of your discussion. Paper formatting should comply to the IEEE Conference format.
+		\item Each group has 5-7 minutes to present the case and the findings.
+		\item The presentation contains only the important points. DO NOT copy-paste the text in your paper to the slides. Such presentation will be REJECTED!
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Next session: Assignment 1 -- Paper and Presentation}{Paper Outline}
+	\begin{itemize}[<+->]
+		\item Abstract
+		\item Introduction
+			\begin{itemize}[<+->]
+				\item Explain some backgrounds about the general needs for computer simulation.
+				\item Give some hints about the field of study of your case (e.g. which branch of science it belongs to).
+				\item Outline: mention the following sections, and topic that discussed within each section.
+			\end{itemize}
+		\item The case study
+			\begin{itemize}[<+->]
+				\item Start with explaining your case. Use deductive approach.
+				\item Continue with the complexity of your case.
+				\item Relate the complexity and the needs for computer simulation to solve the case.
+				\item Give an example of the simulation scenario for that particular case.
+			\end{itemize}
+		\item Conclusion: conclude your paper.
+		\item Reference/Bibliography
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Next session: Assignment 1 -- Paper and Presentation}{Presentation Outline\footnote{This is merely a hint. The numbers are not to be strictly followed.}}
+	\begin{itemize}[<+->]
+		\item Slide 1: cover -- presentation title and group members.
+		\item Slides 2-3: Background
+		\item Slides 4-7: The case study
+		\item Slide 8: Conclusion
 	\end{itemize}
 \end{frame}
