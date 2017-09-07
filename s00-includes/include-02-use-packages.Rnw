@@ -26,6 +26,7 @@
 \usepackage{fancyvrb}
 \usepackage[outdir=./figure/]{epstopdf}
 \usepackage{xcolor}
+\usepackage{tabularx}
 \definecolor{lightgray2}{gray}{0.95}
 
 \input{../openintro-statistics/extraTeX/style/colorsV1.tex}

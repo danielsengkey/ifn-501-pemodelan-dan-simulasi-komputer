@@ -1,0 +1,167 @@
+<<child='../s00-includes/include-01-preambule-open.Rnw'>>=
+@
+
+<<child='../s00-includes/include-02-use-packages.Rnw'>>=
+@
+
+<<child='../s00-includes/include-03-beamer-setup.Rnw'>>=
+@
+%\setbeameroption{show notes}
+%\setbeameroption{show notes on second screen}
+
+<<child='../s00-includes/include-04-course-info.Rnw'>>=
+@
+
+	\subtitle{Session 3: Introduction to Computer Simulation (Part 2)}
+	\date{}
+
+\begin{document}
+<<reset-ws, echo=F>>=
+	rm(list=ls())
+@
+
+<<r-setup, include=FALSE, cache=FALSE>>=
+  library(knitr)
+  library(xtable)
+  options(width = 60)
+  opts_chunk$set(tidy = TRUE, size='small')
+  options(max.print=10)
+  options(digits=4)
+  options(xtable.comment = FALSE)
+@
+	\maketitle
+
+\section*{Outline}
+	\frame{
+	    \small
+			\frametitle{Outline}
+			%\begin{multicols}{2}
+			    \tableofcontents[hideallsubsections]
+		   %\end{multicols}
+		}
+		
+% The course materials here
+\section*{Acknowledgement}
+	  \begin{frame}{Acknowledgement}
+		  \vfill
+		  \centering
+ 			 \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+ 				\usebeamerfont{title}When not specifically defined, the contents of this presentation are adapted from \cite{mchaney2009understanding}.%
+			  \end{beamercolorbox}
+		  \vfill
+	  \end{frame}
+	  
+\section{Different Types of Simulation}
+	\begin{frame}{\insertsection}
+		\begin{itemize}[<+->]
+			\item Continuous
+			\item Monte Carlo
+			\item Discrete Event
+			\item Agent-based Modeling
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}{\insertsection}{Continuous Simulation}
+		\begin{itemize}[<+->]
+			\item Concerned with modeling a set of equations over time
+			\item The set of equations represents a system
+			\item System may consist of algebraic system, game theoretic models, statistical models, or differential equations
+			\item The parameters may continuously changing
+			\item Examples:
+				\begin{itemize}[<+->]
+					\item 4 WD suspension system
+					\item Competition between 2 populations
+					\item Population and/or urban growth
+				\end{itemize}
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}{\insertsection}{Monte Carlo Simulation}
+		\begin{block}<+->{Definition}
+			A scheme employing random numbers, which is used for solving certain stochastic or deterministic problems where the \emph{passage of time plays no role}.
+		\end{block}
+		\begin{itemize}[<+->]
+			\item Invented by John Von Neumann for his experiments in atomic bomb
+			\item Based on random numbers -- the name itself invokes the thoughts of gambling, gaming and chance
+			\item The model is not influenced by time
+			\item The use of random number generators gives Monte Carlo simulation characteristics not common to continuous simulation
+			\item Example: paintball game between two groups
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}{\insertsection}{Discrete Event Computer Simulation}
+		\begin{itemize}[<+->]
+			\item Characterized by the passage of blocks of time during which nothing happens, punctuated by events which change the state of the system.
+			\item Example: Customers at an ATM
+			\begin{itemize}[<+->]
+				\item Events: arrive, wait for service, receive service, depart
+				\item The duration of each event can be different e.g follows certain distribution pattern (See Tables \ref{tbl:atm-example-inter-arrival} and \ref{tbl:atm-example-service-duration})
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}{\insertsection}{Discrete Event Computer Simulation -- Example}
+		\begin{table}[!t]
+			\centering
+			\footnotesize
+			\caption{Time between customer arrivals}
+			\label{tbl:atm-example-inter-arrival}
+			\begin{tabular}{|l|l||l|l|}\hline\hline
+				\multicolumn{1}{|c|}{\bf Time (min.)}	&	\multicolumn{1}{|c|}{\bf Percentage (\%)}	&	\multicolumn{1}{|c|}{\bf Time (min.)}	&	\multicolumn{1}{|c|}{\bf Percentage (\%)}	\\\hline\hline
+				1	&	5	&	6	&	20	\\\hline
+				2	&	7	&	7	&	10	\\\hline
+				3	&	8	&	8	&	8	\\\hline
+				4	&	10	&	9	&	7	\\\hline
+				5	&	20	&	10	&	5	\\\hline\hline
+			\end{tabular}
+		\end{table}
+		
+		\begin{table}[!t]
+			\centering
+			\footnotesize
+			\caption{Service durations}
+			\label{tbl:atm-example-service-duration}
+			\begin{tabular}{|l|l||l|l|}\hline\hline
+				\multicolumn{1}{|c|}{\bf Time (min.)}	&	\multicolumn{1}{|c|}{\bf Percentage (\%)}	&	\multicolumn{1}{|c|}{\bf Time (min.)}	&	\multicolumn{1}{|c|}{\bf Percentage (\%)}	\\\hline\hline
+				1	&	10	&	4	&	25	\\\hline
+				2	&	25	&	5	&	10	\\\hline
+				3	&	30	&	 	&	 	\\\hline
+			\end{tabular}
+		\end{table}
+	\end{frame}
+	
+	\begin{frame}{\insertsection}{Discrete Event Computer Simulation -- Example}
+		\begin{itemize}[<+->]
+			\item In \cite{mchaney2009understanding} the example was coded and ran as a GPSS simulation for 1000 hours of simulated time
+			\item Some results:
+				\begin{itemize}[<+->]
+					\item Maximum waiting line size is 5 customers
+					\item Average waiting time is 1.381 minutes
+					\item Utilization time is 76.3\%
+					\item Average length of the waiting line is 0.251 customer
+					\item The machine was used 10898 times by 10898 customers
+				\end{itemize}
+			\item The results can be used for evaluation and to determine if another machine is needed.
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}{\insertsection}{Agent-based Modeling}
+		\begin{itemize}[<+->]
+			\item Addresses the simultaneous interactions of multiple agents to simulate, recreate, study, and predict complex phenomenon.
+			\item Common elements:
+				\begin{itemize}[<+->]
+					\item Multiple agents modeled and scaled with various levels of detail (granularity)
+					\item Decision-making heuristics and rules
+					\item Adaptive behaviors or learning
+					\item Interaction rules or topology
+					\item Environment for interaction often consisting of constrained resources
+				\end{itemize}
+		\end{itemize}
+	\end{frame}
+%\section{Next Session}
+%		<<next-week, child='s01-rnw/s02-next-week.Rnw'>>=
+%		@
+			
+% Closing document
+<<child='../s00-includes/include-99-master-footer.Rnw'>>=
+@

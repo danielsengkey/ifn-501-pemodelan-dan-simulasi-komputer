@@ -1,0 +1,81 @@
+\begin{frame}{Introduction to Computer Simulation}{Why it is important?}
+	\begin{itemize}[<+->]
+		\item Reduce the risk associated with creating new systems or with making alteration to the existing ones.
+		\item Investment assurance
+		\item Decreasing margin of error while increasing precision
+	\end{itemize}
+\end{frame}
+
+\subsection{Simulation Defined}
+	\begin{frame}{Introduction to Computer Simulation}{\insertsubsection}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\linewidth]{s01-rnw/harry-potter-prophecy}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{Introduction to Computer Simulation}{\insertsubsection}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\linewidth]{s01-rnw/weather-forecast}
+		\end{figure}
+	\end{frame}
+
+\subsubsection{Basic Nature}
+	\begin{frame}{Introduction to Computer Simulation}{\insertsubsection - \insertsubsubsection}
+		\begin{itemize}[<+->]
+			\item Branch of \emph{applied mathematics}
+			\item Exploits computing power and improvements in programming languages to solve complex real world system that modeled as \emph{analytical} or \emph{purely mathematical} models
+			\item The challenge is about how to accurately model the \emph{real world system}
+		\end{itemize}
+		\begin{block}<+->{Definition}
+			Using a computer to imitate the operation of a real world process or facility according to appropriately developed assumptions taking the form of logical, statistical, or mathematical relationships which are developed and shaped into a model.
+		\end{block}
+	\end{frame}
+
+\subsubsection{Usages}
+	\begin{frame}{Introduction to Computer Simulation}{\insertsubsection - \insertsubsubsection}
+		% Please add the following required packages to your document preamble:
+		% \usepackage[table,xcdraw]{xcolor}
+		% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+		\begin{table}[!t]
+		\centering
+		\footnotesize
+		\caption{Situations warranting computer simulations}
+		\label{tbl:situation-application-of-simulation}
+		\begin{tabularx}{\linewidth}{|X|X|}
+		\hline
+		\rowcolor[HTML]{9A0000} 
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} \textbf{General Situation}}}           & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} \textbf{Examples}}}                                  \\ \hline
+		Real system does not yet exist and building a prototype is cost prohibitive, time-consuming or hazardous. & Aircraft, production system, nuclear reactor                                                                           \\ \hline
+		System is impossible to build.                                                                            & National economy, biological system                                                                                    \\ \hline
+		Real system exists but experimentation is too expensive, hazardous or disruptive to conduct.              & Proposed Changes to a Materials Handling System, Military Unit, Transportation System, Airport Baggage Handling System \\ \hline
+		Forecasting is required to analyze long time periods in a compressed format.                              & Population growth forest fire spread, urbanization studies, pandemic flu spread                                        \\ \hline
+		Mathematical modeling has no practical analytical or numeric solution.                                    & Stochastic problems, nonlinear differential equations                                                                  \\ \hline
+		\end{tabularx}
+		\end{table}
+	\end{frame}
+
+\subsubsection{Pros and Cons}
+	\begin{frame}{Introduction to Computer Simulation}{\insertsubsection - \insertsubsubsection}
+		{\large Pros}\onslide<+->
+		\begin{enumerate}[<+->]
+			\item Allows experimentation without disruptions to the existing systems.
+			\item Concept can be evaluated before installation.
+			\item Detection of unforeseen problems or bugs.
+			\item Gain in knowledge on system
+			\item Speed in analysis
+			\item Force system definition
+			\item Enhances creativity
+		\end{enumerate}
+	\end{frame}
+	\begin{frame}{Introduction to Computer Simulation}{\insertsubsection - \insertsubsubsection}
+		{\large Cons}\onslide<+->
+		\begin{enumerate}[<+->]
+			\item Expensive
+			\item Time consuming
+			\item Only produces approximate answers
+			\item Difficult to validate
+			\item Accepted as gospel
+		\end{enumerate}
+	\end{frame}

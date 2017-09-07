@@ -1,0 +1,68 @@
+<<child='../s00-includes/include-01-preambule-open.Rnw'>>=
+@
+
+<<child='../s00-includes/include-02-use-packages.Rnw'>>=
+@
+
+<<child='../s00-includes/include-03-beamer-setup.Rnw'>>=
+@
+%\setbeameroption{show notes}
+%\setbeameroption{show notes on second screen}
+
+<<child='../s00-includes/include-04-course-info.Rnw'>>=
+@
+
+	\subtitle{Session 1: Course Overview}
+	\date{}
+
+\begin{document}
+<<reset-ws, echo=F>>=
+	rm(list=ls())
+@
+
+<<r-setup, include=FALSE, cache=FALSE>>=
+  library(knitr)
+  library(xtable)
+  options(width = 60)
+  opts_chunk$set(tidy = TRUE, size='small')
+  options(max.print=10)
+  options(digits=4)
+  options(xtable.comment = FALSE)
+@
+	\maketitle
+
+\section*{Outline}
+	\frame{
+	    \small
+			\frametitle{Outline}
+			%\begin{multicols}{2}
+			    \tableofcontents[hideallsubsections]
+		   %\end{multicols}
+		}
+		
+% The course materials here
+\section*{Acknowledgement}
+	  \begin{frame}{Acknowledgement}
+		  \vfill
+		  \centering
+ 			 \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+ 				\usebeamerfont{title}When not specifically defined, the contents of this presentation are adapted from \cite{mchaney2009understanding}.%
+			  \end{beamercolorbox}
+		  \vfill
+	  \end{frame}
+	  
+\section{Course Details}
+		<<course-overview, child='s01-rnw/s01-introduction.Rnw'>>=
+		@
+
+\section{Introduction to Computer Simulation}
+		<<introduction-to-computer-simulation, child='s01-rnw/s03-introductories01.Rnw'>>=
+		@
+
+\section{Next Session}
+		<<next-week, child='s01-rnw/s02-next-week.Rnw'>>=
+		@
+			
+% Closing document
+<<child='../s00-includes/include-99-master-footer.Rnw'>>=
+@
