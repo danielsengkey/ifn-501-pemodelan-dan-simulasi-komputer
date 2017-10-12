@@ -1,0 +1,98 @@
+<<child='../s00-includes/include-01-preambule-open.Rnw'>>=
+@
+
+<<child='../s00-includes/include-02-use-packages.Rnw'>>=
+@
+
+<<child='../s00-includes/include-03-beamer-setup.Rnw'>>=
+@
+%\setbeameroption{show notes}
+%\setbeameroption{show notes on second screen}
+<<child='../s00-includes/include-04-course-info.Rnw'>>=
+@
+
+	\subtitle{Session 5: Introduction to Statistics (Part 2)}
+	\date{}
+
+\begin{document}
+<<reset-ws, echo=F>>=
+	rm(list=ls())
+@
+
+<<r-setup, include=FALSE, cache=FALSE>>=
+  library(knitr)
+  library(xtable)
+  options(width = 60)
+  opts_chunk$set(tidy = TRUE, size='small')
+  options(max.print=10)
+  options(digits=4)
+  options(xtable.comment = FALSE)
+@
+	\maketitle
+
+\section*{Outline}
+	\frame{
+	    \small
+			\frametitle{Outline}
+			%\begin{multicols}{2}
+			    \tableofcontents[hideallsubsections]
+		   %\end{multicols}
+		}
+		
+% The course materials here
+\section{Descriptive Statistics}
+	\subsection{Five-Number Summary}
+		<<stat-descriptive, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0301-descriptive-statistics-summary.Rnw'>>=
+		@
+	\subsection{Variance and Standard Deviation}
+		<<stat-sd-var, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0302-descriptive-statistics-variance-and-standard-deviation.Rnw'>>=
+		@
+
+	\subsection{Boxplot}
+		<<stat-boxplot, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0303-descriptive-statistics-boxplot.Rnw'>>=
+		@
+
+	\subsection{Exercise 3}
+		<<stat-boxplot, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0304-exercise-3.Rnw'>>=
+		@
+
+\section{Probability}
+	\subsection{Defining Probability}
+		<<probability-intro, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0401-probability-intro.Rnw'>>=
+		@
+		
+	\subsection{Random Variables}
+		<<probability-random-var, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0402-probability-random-var.Rnw'>>=
+		@
+		
+	\subsection{Exercise 4}
+		<<exercise-4, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0403-exercise-4.Rnw'>>=
+		@
+		
+\section{Distributions of Random Variables}
+	\subsection{Normal Distribution}
+		<<normal-distribution, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0501-normal-distribution.Rnw'>>=
+		@
+	\subsection{Geometric Distribution}
+		<<geometric-distribution, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0502-geometric-distribution.Rnw'>>=
+		@
+	\subsection{Binomial Distribution}
+		<<binomial-distribution, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0503-binomial-distribution.Rnw'>>=
+		@
+	\subsection{Generating Random Numbers}
+		<<generating-random-numbers-in-R, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0504-generating-random-numbers-in-R.Rnw'>>=
+		@
+	\subsection{Exercise 5}
+		<<exercise-5, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0505-exercise-5.Rnw'>>=
+		@
+		
+\section*{Next...}
+	\begin{frame}{Next...}
+		\begin{itemize}[<+->]
+			\item Inference Statistics, numerical data.
+			\item For preparation read Chapters 4 and 5 from \cite{diez2015openintro}.
+		\end{itemize}
+	\end{frame}		
+% Closing document
+<<child='../s00-includes/include-99-master-footer.Rnw'>>=
+@

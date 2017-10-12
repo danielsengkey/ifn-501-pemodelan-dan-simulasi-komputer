@@ -1,0 +1,70 @@
+<<child='../s00-includes/include-01-preambule-open.Rnw'>>=
+@
+
+<<child='../s00-includes/include-02-use-packages.Rnw'>>=
+@
+
+<<child='../s00-includes/include-02b-lstlistings.Rnw'>>=
+@
+
+<<child='../s00-includes/include-03-beamer-setup.Rnw'>>=
+@
+%\setbeameroption{show notes}
+%\setbeameroption{show notes on second screen}
+
+<<child='../s00-includes/include-04-course-info.Rnw'>>=
+@
+
+	\subtitle{Session 6: Introduction to Statistics}
+	\date{}
+
+\begin{document}
+<<reset-ws, echo=F>>=
+	rm(list=ls())
+@
+
+<<r-setup, include=FALSE, cache=FALSE>>=
+  library(knitr)
+  library(xtable)
+  options(width = 60)
+  opts_chunk$set(tidy = TRUE, size='scriptsize', background='gray90')
+  options(max.print=10)
+  options(digits=2)
+  options(xtable.comment = FALSE)
+@
+	\maketitle
+
+\section*{Outline}
+	\frame{
+	    \small
+			\frametitle{Outline}
+			%\begin{multicols}{2}
+			    \tableofcontents[hideallsubsections]
+		   %\end{multicols}
+		}
+		
+% The course materials here	
+\section{Inference for Numerical Data}
+\label{sec:inference-numerical-data}
+	\subsection{t-test}
+		<<s0001-t-test, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/s0001-t-test.Rnw'>>=
+		@
+		
+	\subsection{Analysis of Variance}
+		<<s0002-anova, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/s0002-anova.Rnw'>>=
+		@
+
+\section{Non-parametric Tests}
+		<<s9001-intro-to-non-parametric-methods, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/s9001-intro-to-non-parametric-methods.Rnw'>>=
+		@
+		
+\section*{Next Session}
+	\begin{frame}{Next session..}
+		\begin{itemize}
+			\item Cellular Automaton
+		\end{itemize}
+	\end{frame}
+	
+% Closing document
+<<child='../s00-includes/include-99-master-footer.Rnw'>>=
+@

@@ -1,0 +1,119 @@
+<<child='../s00-includes/include-01-preambule-open.Rnw'>>=
+@
+
+<<child='../s00-includes/include-02-use-packages.Rnw'>>=
+@
+\usepackage{hhcount}
+
+<<child='../s00-includes/include-03-beamer-setup.Rnw'>>=
+@
+%\setbeameroption{show notes}
+%\setbeameroption{show notes on second screen}
+<<child='../s00-includes/include-04-course-info.Rnw'>>=
+@
+
+	\subtitle{Session 4: Introduction to Statistics (Part 1)}
+	\date{}
+
+\begin{document}
+<<reset-ws, echo=F>>=
+	rm(list=ls())
+@
+
+<<r-setup, include=FALSE, cache=FALSE>>=
+  library(knitr)
+  library(xtable)
+  options(width = 60)
+  opts_chunk$set(tidy = TRUE, size='small')
+  options(max.print=10)
+  options(digits=2)
+  options(xtable.comment = FALSE)
+@
+	\maketitle
+
+\section*{Outline}
+	\frame{
+	    \small
+			\frametitle{Outline}
+			%\begin{multicols}{2}
+			    \tableofcontents[hideallsubsections]
+		   %\end{multicols}
+		}
+		
+% The course materials here
+\section[Statistics]{Introduction to Statistics}
+	<<stat-inro, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0001-statistics-intro.Rnw'>>=
+	@
+	
+	\subsection{Why do We Need Statistics?}
+	<<stat-why, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0002-statistics-why.Rnw'>>=
+	@
+	
+	\subsection{Data and Variables}
+	<<stat-data-variable, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0003-data-vs-variables.Rnw'>>=
+	@
+
+	\subsection{Population, Sample and Experiments}
+	<<stat-population-sampel-experiments, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0004-sample-population-experiments.Rnw'>>=
+	@
+
+\section[GNU R]{Introduction to GNU R}
+	<<r-inro, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0101-gnu-r-intro.Rnw'>>=
+	@
+
+	\subsection{Frequently Used Functions}
+	<<r-fuf, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0103-gnu-r-frequently-used-functions.Rnw'>>=
+	@
+	
+	\subsection{Loading Data}
+	<<r-loading-data, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0104-gnu-r-loading-data.Rnw'>>=
+	@
+	
+	\subsection{Further Readings}
+	<<r-further-readings, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0105-gnu-r-learning-sources.Rnw'>>=
+	@
+
+	\subsection{Exercise 1}
+	<<r-further-readings, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0106-exercise-r-intro.Rnw'>>=
+	@
+
+\section{Organizing and Graphing Data}
+	<<ogd-intro, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0201-organizing-and-graphing-data-intro.Rnw'>>=
+	@
+	
+	\subsection{Organizing and Graphing Qualitative Data}
+		<<ogd-qualitative, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0202-organizing-and-graphing-qualitative-data.Rnw'>>=
+		@
+
+	\subsection{Organizing and Graphing Quantitative Data}
+		<<ogd-quantitative, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0203-organizing-and-graphing-quantitative-data.Rnw'>>=
+		@
+
+	\subsection{Cumulative Frequency Distributions}
+		<<cumulative-freq-dist, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0204-cumulative-frequency-distributions.Rnw'>>=
+		@
+
+	\subsection{Stem-and-Leaf Displays}
+		<<ogd-stem-leaf, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0205-stem-leaf-display.Rnw'>>=
+		@
+
+	\subsection{Exercise 2}
+		<<ogd-stem-leaf, child='/home/daniel/Documents/My Lectures/materials-library/statistics/Rnw-sources/0206-exercise-graph.Rnw'>>=
+		@
+
+\section*{Next...}
+	\begin{frame}{Next...}
+		\begin{itemize}[<+->]
+			\item Descriptive Statistics
+			\item Random Numbers
+			\item Preparation, read:
+				\begin{itemize}
+					\item Chapters 3-8 from \cite{mann2010introductory}.
+					\item Chapters 2 and 3 from \cite{diez2015openintro}.
+				\end{itemize}
+		\end{itemize}
+	\end{frame}
+	
+% Closing document
+<<child='../s00-includes/include-99-master-footer.Rnw'>>=
+@
