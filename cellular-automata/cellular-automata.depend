@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1511453736 source:/home/daniel/Documents/My Lectures/[IFN501] Pemodelan dan Simulasi Komputer/cellular-automata/main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<unistd.h>
+	<vector>
+	<map>
+	<string>
+
