@@ -1,5 +1,5 @@
 % Do not forget that the tex file will be at the parent directory
-\input{../../GeneralSlides/general-2017}
+\input{../../GeneralSlides/general-2018}
 
 \subsection{Scoring System}
 \begin{frame}{Scoring Components}
