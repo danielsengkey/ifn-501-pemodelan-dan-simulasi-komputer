@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,top=1in, bottom=1.5in, left=0.5in, right=0.5in]{geometry}
+%\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[font=footnotesize]{caption}
+\usepackage{hyperref}
+\renewcommand{\figurename}{Gambar}
+%opening
+\title{
+	Proyek Topik Statistika\\
+	MK Pemodelan dan Simulasi Komputer\\
+	Semester Gasal 2018/2019
+}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+%\thispagestyle{empty}
+%\large
+	\section{Problem Set}
+		\begin{enumerate}	
+			\item \textit{Dataset}: Angket
+			
+			Data ini berasal dari angket yang diisi oleh anda dan peserta kelas tahun lalu. Jika tidak disebutkan, berarti gunakan \textit{dataset} gabungan!
+			
+				\begin{enumerate}
+					\item Buatlah diagram batang yang menunjukkan jumlah respons dari masing-masing kelas (2017 dan 2018)!
+					\item Jika diketahui pada tahun 2017 ada 31 orang peserta kelas, dan pada tahun 2018 ada 18 orang peserta, buatlah \textit{pie chart} yang menunjukkan persentase jumlah mahasiswa yang mengisi angket untuk masing-masing kelas!
+					\item Buatlah histogram untuk besar penggunaan kuota data dalam sebulan. Jangan lupa berikan keterangan satuan (MB/GB) pada sumbu yang sesuai!
+						\begin{enumerate}
+							\item Secara umum
+							\item Per-angkatan, dalam 1 grafik
+						\end{enumerate}
+					\item Buatlah tabel distribusi frekuensi serta diagram batang untuk kota kelahiran.
+						\begin{enumerate}
+							\item Secara umum
+							\item Per-angkatan, dalam 1 grafik
+						\end{enumerate}
+					\item Buatlah tabel distribusi frekuensi serta diagram batang untuk kelompok jenis kelamin.
+						\begin{enumerate}
+							\item Secara umum
+							\item Per-angkatan, dalam 1 grafik
+						\end{enumerate}
+					\item Dari data tanggal lahir yang ada, hitunglah umur (per tanggal 1 November 2018) setiap mahasiswa yang mengisi angket tersebut. Kemudian buatlah histogram untuk data umur mahasiswa.
+					\item Kelompokkan data umur mahasiswa berdasarkan peserta 2017 dan 2018, dan buatlah histogram untuk keduanya. Histogram berada dalam 1 grafik 
+					\item Buatlah diagram batang untuk frekuensi bulan kelahiran:
+						\begin{enumerate}
+							\item Secara umum
+							\item Per-angkatan, dalam 1 grafik
+						\end{enumerate}
+					\item Buatlah \textit{pie chart} untuk persentase pilihan bidang riset:
+						\begin{enumerate}
+							\item Secara umum
+							\item Per-angkatan, bersebelahan
+							\item Per-kelompok gender, bersebelahan
+						\end{enumerate}
+					\item Tentukan apakah: IPK peserta kelas 2017 dan 2018 relatif sama.
+					\item Ujilah apakah terdapat cukup bukti untuk menerima hipotesa berikut ini: \textbf{Mahasiswi cenderung memiliki Indeks Prestasi Kumulatif yang lebih tinggi daripada mahasiswa}.
+					\item Ujilah apakah terdapat cukup bukti untuk menerima hipotesa berikut ini: \textbf{Mahasiswa cenderung lebih tinggi dibanding mahasiswi}.
+					\item Ujilah apakah terdapat cukup bukti untuk menerima hipotesa berikut ini: \textbf{Mahasiswa cenderung menggunakan kuota data yang lebih banyak dibanding mahasiswi}.
+				\end{enumerate}
+			\item \textit{Dataset}: Nilai
+				\begin{enumerate}
+					\item Ujilah apakah terdapat cukup bukti untuk menerima hipotesa berikut ini: \textbf{Nilai remedial pada MK Komunikasi Jaringan cenderung lebih tinggi dari nilai Quiz awal}.
+					\item Ujilah apakah terdapat cukup bukti untuk menerima hipotesa berikut ini: \textbf{Nilai tes pra-kalkulus pada MK Matematika Terapan cenderung lebih baik dengan tes-tes yang diulang}.
+				\end{enumerate}
+			\item \textit{Dataset}: USGS Earthquake
+			
+			Data ini diambil dari \textit{United States Geological Survey}, dan menunjukkan gempa di Indonesia dan sekitarnya dari Oktober 2017 sampai awal Oktober 2018. Dengan memanfaatkan koordinat yang ada, buatlah:
+				\begin{enumerate}
+					\item Peta gempa per-bulan
+					\item Peta gempa dengan kekuatan 0-5, 5-7, dan > 7
+				\end{enumerate}
+			
+			Titik-titik pusat gempa harus berada di lokasi yang sesuai, dan tingkat kekuatan ditunjukkan dengan gradasi warna.
+			
+		\end{enumerate}
+		
+	\section{Aturan Pengerjaan}
+		\begin{enumerate}
+			\item Laporan dikumpulkan pada kuliah hari Senin tanggal 5 November 2018. Masing-masing kelompok cukup mengumpulkan satu buah laporan.
+			\item Berikan penjelasan untuk setiap langkah pengerjaan yang anda lakukan.
+			\item Untuk setiap tugas pengujian hipotesa lakukan dengan 2 cara: grafis dan uji statistik. Tentukan metode statistik yang tepat/sesuai untuk data yang akan anda uji. \textbf{Kesimpulan terhadap hipotesa harus jelas dan ditandai khusus}!
+			\item \textit{Source code/command} dan penjelasannya wajib ditulis tangan!
+			\item Hasil eksekusi boleh di-\textit{screenshot} dan ditempelkan pada laporan.
+			\item Gunakan kertas HVS ukuran A4, \textit{margin} kiri-atas-kanan-bawah: 3-2-2-2 cm.
+			\item Anda akan \textbf{diuji secara lisan} untuk mempertanggungjawabkan hasil kerja	anda. Hasil pengujian akan menjadi \textbf{Faktor Pengali} terhadap nilai anda.
+		\end{enumerate}
+\end{document}
